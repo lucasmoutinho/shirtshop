@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Loja FUDIDA de Roupas</title>
+</head>
+<body>
+	<table>
+		<thead>
+			<tr>
+				<th>Camiseta</th>
+				<th>Descrição</th>
+				<th>Preço</th>
+				<th>Quantidade</th>
+			</tr>
+		</thead>
+		<tbody>
+			<% @produtos.each do |prod| %>
+				<tr>
+					<td><%= prod.nome%></td>
+					<td><%= prod.descricao%></td>
+					<td><%= prod.preco%></td>
+					<td><%= prod.quantidade%></td>
+				</tr>
+			<% end %>
+		</tbody>
+	</table>
+</body>
+</html>
